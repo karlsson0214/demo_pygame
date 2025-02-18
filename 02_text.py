@@ -1,12 +1,9 @@
 """
- Pygame base template for opening a window
- 
- Sample Python/Pygame Programs
- Simpson College Computer Science
- http://programarcadegames.com/
- http://simpson.edu/computer-science/
- 
- Explanation video: http://youtu.be/vRB_983kUMc
+Task
+
+Show your name in the upper left corner of the window.
+
+Show your favorite color in the lower right corner of the window.
 """
  
 import pygame
