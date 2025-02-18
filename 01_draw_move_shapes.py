@@ -18,7 +18,7 @@ pygame.init()
 size = (700, 500)
 screen = pygame.display.set_mode(size)
  
-pygame.display.set_caption("My Game")
+pygame.display.set_caption("Draw circle")
 
 # Add visual elements to the game
 circle_x = 50
