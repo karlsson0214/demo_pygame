@@ -18,15 +18,15 @@ RED = (255, 0, 0)
 pygame.init()
  
 # Set the width and height of the screen [width, height]
-size = (600, 800)
+size = (400, 400)
 screen = pygame.display.set_mode(size)
  
-pygame.display.set_caption("My Game")
+pygame.display.set_caption("The Snake Game")
 
 # Add visual elements to the game
 snake_image = pygame.image.load("img/snake.png")
 snake_x = 50
-snake_y = 700
+snake_y = 300
 snake_last_direction = "right"
 
 # Used to manage how fast the screen updates
@@ -51,7 +51,7 @@ while is_running:
             snake_last_direction = "left"
         # Wrap the snake around the screen.
         if snake_x < 0:
-            snake_x = 600
+            snake_x = 400
     
     # --- Screen-clearing code goes here
  
