@@ -27,17 +27,17 @@ circle_radius = 25
 circle_speed_y = 1
  
 # Loop until the user clicks the close button.
-done = False
+is_running = True
  
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
  
 # -------- Main Program Loop -----------
-while not done:
+while is_running:
     # --- Main event loop
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            done = True
+            is_running = False
  
     # --- Game logic should go here
     circle_x += 1
