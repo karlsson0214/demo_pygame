@@ -28,19 +28,19 @@ snake_image = pygame.image.load("img/snake.png")
 snake_x = 50
 snake_y = 700
 snake_last_direction = "right"
- 
-# Loop until the user clicks the close button.
-done = False
- 
+
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
- 
+
+# Loop until the user clicks the close button.
+is_running = True
+
 # -------- Main Program Loop -----------
-while not done:
+while is_running:
     # --- Main event loop
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            done = True
+            is_running = False
  
     # --- Game logic should go here
     keys = pygame.key.get_pressed()
