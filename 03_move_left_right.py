@@ -71,4 +71,5 @@ while is_running:
     # --- Limit to 60 frames per second
     clock.tick(60)
  
-# Close the window and quit.
+# Clean up when the game exits.
+pygame.quit()
