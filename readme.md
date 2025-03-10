@@ -30,7 +30,7 @@ Vilket alternativ gillar du bäst? Välj motsvarande fil att arbeta i.
 ### Data för ett plommon i en lista
 04_droppings_v1_list.py
 
-'''
+
     plum_image = pygame.image.load("img/plum.png")
     plum_radius = (plum_image.get_width() + plum_image.get_height()) / 4
     # plums
@@ -53,7 +53,7 @@ Vilket alternativ gillar du bäst? Välj motsvarande fil att arbeta i.
         if collides(snake_x, snake_y, snake_radius, 
                     plum[0], plum[1], plum_radius):
             plums.remove(plum)
-'''
+
 Fiender
 ---------------
 
