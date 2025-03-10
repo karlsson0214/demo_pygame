@@ -31,28 +31,28 @@ Vilket alternativ gillar du bäst? Välj motsvarande fil att arbeta i.
 04_droppings_v1_list.py
 
 '''
-plum_image = pygame.image.load("img/plum.png")
-plum_radius = (plum_image.get_width() + plum_image.get_height()) / 4
-# plums
-# Chance of having a new plum.
-if (random.randint(0, 100) < 2):
-    plum_x = random.randint(0, 600)
-    # Add plum coodinates to the list.
-    plums.append([plum_x, 0, 0]) # x, y, speed
+    plum_image = pygame.image.load("img/plum.png")
+    plum_radius = (plum_image.get_width() + plum_image.get_height()) / 4
+    # plums
+    # Chance of having a new plum.
+    if (random.randint(0, 100) < 2):
+        plum_x = random.randint(0, 600)
+        # Add plum coodinates to the list.
+        plums.append([plum_x, 0, 0]) # x, y, speed
 
-# move plums
-for plum in plums:
-    # Move the plum down.
-    plum[1] += plum[2]
-    # Increase the speed of the plum.
-    plum[2] += 0.2
-    # Remove plums that have gone off the screen.
-    if plum[1] > 800:
-        plums.remove(plum)
-    # Check for collisions with the snake.
-    if collides(snake_x, snake_y, snake_radius, 
-                plum[0], plum[1], plum_radius):
-        plums.remove(plum)
+    # move plums
+    for plum in plums:
+        # Move the plum down.
+        plum[1] += plum[2]
+        # Increase the speed of the plum.
+        plum[2] += 0.2
+        # Remove plums that have gone off the screen.
+        if plum[1] > 800:
+            plums.remove(plum)
+        # Check for collisions with the snake.
+        if collides(snake_x, snake_y, snake_radius, 
+                    plum[0], plum[1], plum_radius):
+            plums.remove(plum)
 '''
 Fiender
 ---------------
