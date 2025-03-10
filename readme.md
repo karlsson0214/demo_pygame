@@ -32,6 +32,7 @@ Vilket alternativ gillar du bäst? Välj motsvarande fil att arbeta i.
 
 
     plum_image = pygame.image.load("img/plum.png")
+    plums = []
     plum_radius = (plum_image.get_width() + plum_image.get_height()) / 4
     # plums
     # Chance of having a new plum.
