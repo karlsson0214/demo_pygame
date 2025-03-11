@@ -25,7 +25,7 @@ RED = (255, 0, 0)
 pygame.init()
  
 # Set the width and height of the screen [width, height]
-size = (600, 800)
+size = (500, 500)
 screen = pygame.display.set_mode(size)
  
 pygame.display.set_caption("My Game")
@@ -33,7 +33,7 @@ pygame.display.set_caption("My Game")
 # Add visual elements to the game
 snake_image = pygame.image.load("img/snake.png")
 snake_x = 50
-snake_y = 700
+snake_y = 400
 snake_last_direction = "right"
 snake_radius = (snake_image.get_width() + snake_image.get_height()) / 4
 
@@ -63,7 +63,7 @@ while is_running:
             snake_last_direction = "left"
         # Wrap the snake around the screen.
         if snake_x < 0:
-            snake_x = 600
+            snake_x = 500
 
     # plums
     # Chance of having a new plum.
@@ -79,7 +79,7 @@ while is_running:
         # Increase the speed of the plum.
         plum[2] += 0.2
         # Remove plums that have gone off the screen.
-        if plum[1] > 800:
+        if plum[1] > 500:
             plums.remove(plum)
         # Check for collisions with the snake.
         if collides(snake_x, snake_y, snake_radius, 
